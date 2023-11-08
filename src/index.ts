@@ -1,5 +1,5 @@
-type Params = unknown[];
-type Func<T> = (...args: Params) => T;
+type Paramaters = unknown[];
+type Func<T> = (...args: Paramaters) => T;
 
 class Synchronized {
   private static instance: Synchronized | null = null;
@@ -14,7 +14,10 @@ class Synchronized {
     return Synchronized.instance;
   }
 
-  private async internalExecute<T>(fn: Func<T>, ...args: Params): Promise<T> {
+  private async internalExecute<T>(
+    fn: Func<T>,
+    ...args: Paramaters
+  ): Promise<T> {
     const functionName = fn.name;
 
     if (!functionName) {
@@ -45,14 +48,14 @@ class Synchronized {
     }
   }
 
-  public static async execute<T>(fn: Func<T>, ...args: Params): Promise<T> {
+  public static async execute<T>(fn: Func<T>, ...args: Paramaters): Promise<T> {
     return Synchronized.getInstance().internalExecute(fn, ...args);
   }
 }
 
 export function executeSynchronized<T>(
   fn: Func<T>,
-  ...args: Params
+  ...args: Paramaters
 ): Promise<T> {
   return Synchronized.execute(fn, ...args);
 }
