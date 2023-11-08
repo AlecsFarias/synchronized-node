@@ -86,4 +86,4 @@ executeSynchronized(test2, 2);
 
 ## License
 
-This library is licensed under the MIT License. See the [LICENSE](https://github.com/AlecsFarias/synchronized-node/blob/main/LICENSE) file for more details.
+This library is licensed under the MIT License. See the [LICENSE](https://github.com/AlecsFarias/synchronized-nodejs/blob/master/LICENSE) file for more details.
