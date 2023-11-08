@@ -1,0 +1,30 @@
+{
+  "name": "synchronized-nodejs",
+  "version": "1.0.0",
+  "description": "Lib for synchronized functions call with node js",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlecsFarias/synchronized-nodejs.git"
+  },
+  "keywords": [
+    "synchronized"
+  ],
+  "author": "Alecsander Farias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlecsFarias/synchronized-nodejs/issues"
+  },
+  "homepage": "https://github.com/AlecsFarias/synchronized-nodejs#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.8",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  }
+}
