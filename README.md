@@ -1,4 +1,4 @@
-# execute-synchronized
+# synchronized-node
 
 A simple and lightweight library to execute functions in a synchronized way, preventing concurrent calls to the same function.
 
@@ -7,7 +7,9 @@ A simple and lightweight library to execute functions in a synchronized way, pre
 To install the library, run:
 
 ```bash
-npm install execute-synchronized
+npm install synchronized-node
+//or
+yarn add synchronized-node
 ```
 
 ## Usage
@@ -15,9 +17,9 @@ npm install execute-synchronized
 To use the library, you need to import the `executeSynchronized` function from the module:
 
 ```typescript
-import { executeSynchronized } from "synchronized-nodejs";
+import { executeSynchronized } from "synchronized-node";
 //or
-import executeSynchronized from "synchronized-nodejs";
+import executeSynchronized from "synchronized-node";
 ```
 
 Then, you can pass any function and its arguments to the `executeSynchronized` function, which will return a promise that resolves to the result of the function. For example:
@@ -25,7 +27,7 @@ Then, you can pass any function and its arguments to the `executeSynchronized` f
 ```typescript
 import axios from "axios";
 
-import { executeSynchronized } from "synchronized-nodejs";
+import { executeSynchronized } from "synchronized-node";
 
 const getTime = async (): Promise<unknown> => {
   try {
@@ -84,4 +86,4 @@ executeSynchronized(test2, 2);
 
 ## License
 
-This library is licensed under the MIT License. See the [LICENSE](https://github.com/AlecsFarias/synchronized-nodejs/blob/main/LICENSE) file for more details.
+This library is licensed under the MIT License. See the [LICENSE](https://github.com/AlecsFarias/synchronized-node/blob/main/LICENSE) file for more details.
