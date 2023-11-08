@@ -1,6 +1,6 @@
 {
   "name": "synchronized-nodejs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Lib for synchronized functions call with node js",
   "main": "./dist/index.js",
   "scripts": {
