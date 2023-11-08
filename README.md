@@ -27,7 +27,7 @@ import axios from "axios";
 
 import { executeSynchronized } from "synchronized-nodejs";
 
-const getNumber = async (number: number): Promise<unknown> => {
+const getTime = async (): Promise<unknown> => {
   try {
     const {
       data: { hour, minute, seconds },
@@ -46,9 +46,9 @@ const getNumber = async (number: number): Promise<unknown> => {
 };
 
 const test = async (number: number) => {
-  const response = await executeSynchronized(getNumber, 2);
+  const response = await executeSynchronized(getNumber);
 
-  console.log(response);
+  console.log(number, response);
 };
 
 Promise.all([test(3), test(1), test(3)]);
